@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background: black ;
+   
+    color: white;
+}
+
+.nav-bar{
+    padding: 30px 0;
+}
+
+span{
+    color: red;
+}
+
+ul li a{
+    margin: 0 10px;
+    padding: 0 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li a::before{
+    content: '';
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.6s ease;
+}
+
+ul li a:hover::before{
+    width: 100%;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 5px;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: red;
+    color: whitesmoke;
+    border: 2px solid red;
+}
+
+.content{
+    height: 90vh;
+    position: relative;
+}
+
+.content .right img{
+    width: 90%;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+.content .right img:hover{
+    filter: drop-shadow(16px 5px 20px red );
+}
+
+.about-me-sec{
+    min-height: 100vh;
+    background-color: rgb(208, 12, 12);
+    color: white;
+}
+
+.about-me-sec hr{
+    border: 2px solid #000;
+    border-bottom: 2rem;
+}
+
+.about-content img{
+    width: 100%;
+    transform: scaleX(-1);
+}
+
+.about-content span{
+    color: black;    
+}
+
+.project-sec{
+    height: 100vh;
+    background-color:rgb(43, 10, 10);
+    
+}
+
+.project > h3{
+    color: white;
+    margin-bottom: 50px;
+}
+
+.project-child img{
+    width: 60%;
+}
+
+.project-parent{
+    gap: 30px;
+} 
+
+.project-child{
+    border: 1px solid red;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.project-child:hover{
+    transform: scale(1.1);
+    background-color: rgb(240, 212, 160);
+}
+
+.project-child h3{
+    margin-top: 10px;
+    color: white;
+}
+
+.project-child p{
+    margin-top: 5px;
+    line-height: 1.4;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.project-child button{
+    margin: 15px;
+}
+
+.contact-me-sec{
+    background-color: rgb(208, 12, 12);
+    height: 50vh;
+    padding: 35px;
+}
+
+.contact-details{
+    padding-top: 4rem;
+}
+
+.contact-details h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
